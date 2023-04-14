@@ -1,4 +1,4 @@
-# Deepfake-Prediction
+# Fake News Prediction and Analysis
 
 # Setup
 
