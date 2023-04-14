@@ -1,2 +1,7 @@
 WELFake_Dataset.csv
 WELFake_Dataset_processed.csv
+FNR_fake.csv
+FNR_fake_processed.csv
+FNR_real.csv
+FNR_real_processed.csv
+datasets/*
