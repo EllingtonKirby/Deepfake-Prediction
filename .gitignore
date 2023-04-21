@@ -6,3 +6,4 @@ FNR_real.csv
 FNR_real_processed.csv
 datasets/*
 ek/__pycache__
+.vscode
