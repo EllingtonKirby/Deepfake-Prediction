@@ -13,7 +13,7 @@ def tokenize_emojis_links_and_compare_counts(filename, data,):
     with open(filename, 'w') as f:
         data.to_json(f, orient='values')
     
-    p.api.set_options(p.OPT.URL, p.OPT.EMOJI, p.OPT.MENTION, p.OPT.HASHTAG, p.OPT.SMILEY)
+    p.api.set_options(p.OPT.URL, p.OPT.EMOJI, p.OPT.MENTION, p.OPT.HASHTAG, p.OPT.SMILEY, p.OPT.NUMBER)
     cleaned_output = p.api.tokenize_file(filename)
     cleaned_data = pd.read_json(cleaned_output, typ='series')
 
