@@ -3,6 +3,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import sys
 sys.path.append('/Users/ellington/dev/preprocessor/')  # nopep8
 import preprocessor as p
+from nltk.stem import SnowballStemmer
 
 
 def tokenize_emojis_links_and_compare_counts(filename, data,):
@@ -29,7 +30,25 @@ def tokenize_emojis_links_and_compare_counts(filename, data,):
     output_vectorizer = CountVectorizer()
     output_vectorizer.fit_transform(tokenized_data)
     print(
-        f"After tokenizing, total token count is: {len(output_vectorizer.get_feature_names_out())}")
+        f"After tokenizing, total token count is: {len(output_vectorizer.get_feature_names_out())}"
+    )
+
+    print("Applying Stemming")
+    stemmer = SnowballStemmer('english')
+    tokenized_data = tokenized_data.apply(
+        lambda x: ' '.join([stemmer.stem(y) for y in x.split()]))
+
+    print("Removing stop words")
+    stop_words = pd.read_json('../stop_words_english.json')[0].tolist()
+    tokenized_data = tokenized_data.apply(lambda x: ' '.join(
+        [word for word in x.split() if word not in (stop_words)]))
+
+    # Vectorize output
+    output_vectorizer = CountVectorizer()
+    output_vectorizer.fit_transform(tokenized_data)
+    print(
+        f"After stemming and removing stopwords, total token count is: {len(output_vectorizer.get_feature_names_out())}"
+    )
 
     return tokenized_data
 
