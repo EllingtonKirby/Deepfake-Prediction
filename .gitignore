@@ -1,5 +1,4 @@
-WELFake_Dataset.csv
-WELFake_Dataset_processed.csv
+WELFake_Dataset*
 FNR_fake.csv
 FNR_fake_processed.csv
 FNR_real.csv
@@ -7,3 +6,4 @@ FNR_real_processed.csv
 datasets/*
 ek/__pycache__
 .vscode
+.DS_Store
