@@ -1,0 +1,35 @@
+KMeans
+Topic 0: fake ratio: 91.29360065915957%
+Topic 1: fake ratio: 48.71589085072231%
+Topic 2: fake ratio: 17.615793470007592%
+Topic 3: fake ratio: 22.95037016726076%
+Topic 4: fake ratio: 77.4902587671096%
+Topic 5: fake ratio: 64.12359857806945%
+Topic 6: fake ratio: 77.92031577648946%
+Topic 7: fake ratio: 15.94574780058651%
+Topic 8: fake ratio: 85.88366061504261%
+Topic 9: fake ratio: 28.81862099253404%
+
+NMF
+Topic 0: fake ratio: 17.953147383500465%
+Topic 1: fake ratio: 72.36810114271822%
+Topic 2: fake ratio: 83.00787941075711%
+Topic 3: fake ratio: 48.94219871552701%
+Topic 4: fake ratio: 70.74442863916548%
+Topic 5: fake ratio: 75.18058364634499%
+Topic 6: fake ratio: 55.18528392428686%
+Topic 7: fake ratio: 47.37151824244802%
+Topic 8: fake ratio: 11.727183513248281%
+Topic 9: fake ratio: 84.91058870805706%
+
+LaDA
+Topic 0: fake ratio: 29.50856375237882%
+Topic 1: fake ratio: 60.97518042598134%
+Topic 2: fake ratio: 82.4924924924925%
+Topic 3: fake ratio: 91.58460161145928%
+Topic 4: fake ratio: 64.22584913983238%
+Topic 5: fake ratio: 7.787741891983009%
+Topic 6: fake ratio: 63.89348329474033%
+Topic 7: fake ratio: 41.74996914722942%
+Topic 8: fake ratio: 81.46473779385171%
+Topic 9: fake ratio: 45.29844644317252%
