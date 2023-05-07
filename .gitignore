@@ -7,3 +7,7 @@ datasets/*
 ek/__pycache__
 .vscode
 .DS_Store
+processed_datasets
+mehdi/tfidf_classifiers
+mehdi/*.sav
+mehdi/embedding_clfs/

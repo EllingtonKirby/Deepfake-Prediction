@@ -33,15 +33,26 @@ def tokenize_emojis_links_and_compare_counts(filename, data,):
         f"After tokenizing, total token count is: {len(output_vectorizer.get_feature_names_out())}"
     )
 
+<<<<<<< HEAD
     # print("Applying Stemming")
     # stemmer = SnowballStemmer('english')
     # tokenized_data = tokenized_data.apply(
     #     lambda x: ' '.join([stemmer.stem(y) for y in x.split()]))
+=======
+    print("Applying Stemming")
+    stemmer = SnowballStemmer('english')
+    tokenized_data = tokenized_data.apply(
+        lambda x: ' '.join([stemmer.stem(y) for y in x.split()]))
+>>>>>>> ed0cabc (final code results)
 
     print("Removing stop words")
     stop_words = pd.read_json('../stop_words_english.json')[0].tolist()
     tokenized_data = tokenized_data.apply(lambda x: ' '.join(
+<<<<<<< HEAD
         [word for word in x.split() if word.lower() not in (stop_words)]))
+=======
+        [word for word in x.split() if word not in (stop_words)]))
+>>>>>>> ed0cabc (final code results)
 
     # Vectorize output
     output_vectorizer = CountVectorizer()
